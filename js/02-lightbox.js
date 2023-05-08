@@ -16,4 +16,5 @@ galleryEl.innerHTML = galleryList;
 let lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
+  showCounter: false,
 });
