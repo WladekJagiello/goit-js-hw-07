@@ -13,8 +13,9 @@ const galleryList = galleryItems
 
 galleryEl.innerHTML = galleryList;
 
-let lightbox = new SimpleLightbox(".gallery a", {
+var lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
   showCounter: false,
+  close: false,
 });
