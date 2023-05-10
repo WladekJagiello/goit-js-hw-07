@@ -16,14 +16,14 @@ const galleryList = galleryItems
   })
   .join("");
 
-function clickItem(event) {
+const clickItem = (event) => {
   event.preventDefault();
 
-  function pressEsc(event) {
+  const pressEsc = (event) => {
     if (event.code === "Escape") {
       instance.close();
     }
-  }
+  };
 
   const instance = basicLightbox.create(
     `<img src="${event.target.dataset.source}">`,
@@ -38,7 +38,7 @@ function clickItem(event) {
   );
 
   instance.show();
-}
+};
 
 galleryEl.innerHTML = galleryList;
 galleryEl.addEventListener("click", clickItem);
